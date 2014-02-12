@@ -1,3 +1,6 @@
+
+SUBDIRS = specs
+
 inputdir = $(includedir)/X11/extensions
 input_HEADERS = \
 	XI.h \
@@ -8,14 +11,14 @@ input_HEADERS = \
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = inputproto.pc
 
-EXTRA_DIST = inputproto.pc.in
+MAINTAINERCLEANFILES = ChangeLog INSTALL
 
-EXTRA_DIST += ChangeLog XI2proto.txt XIproto.txt
-MAINTAINERCLEANFILES = ChangeLog
+.PHONY: ChangeLog INSTALL
 
-.PHONY: ChangeLog
+INSTALL:
+	$(INSTALL_CMD)
 
 ChangeLog:
 	$(CHANGELOG_CMD)
 
-dist-hook: ChangeLog
+dist-hook: ChangeLog INSTALL
