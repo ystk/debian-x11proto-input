@@ -1,3 +1,17 @@
+x11proto-input (2.3.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Remove Cyril from Uploaders.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 13 Jul 2014 10:17:18 +0200
+
+x11proto-input (2.3-1) unstable; urgency=low
+
+  [ Maarten Lankhorst ]
+  * New upstream release.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 09 Jun 2013 14:51:56 +0200
+
 x11proto-input (2.2-1) unstable; urgency=low
 
   * New upstream release.
