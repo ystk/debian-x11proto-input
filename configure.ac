@@ -1,7 +1,6 @@
 AC_PREREQ([2.60])
-AC_INIT([InputProto], [2.2], [https://bugs.freedesktop.org/enter_bug.cgi?product=xorg])
+AC_INIT([InputProto], [2.3.1], [https://bugs.freedesktop.org/enter_bug.cgi?product=xorg])
 AM_INIT_AUTOMAKE([foreign dist-bzip2])
-AM_MAINTAINER_MODE
 
 # Require xorg-macros: XORG_WITH_ASCIIDOC
 m4_ifndef([XORG_MACROS_VERSION],
@@ -11,6 +10,7 @@ XORG_DEFAULT_OPTIONS
 XORG_ENABLE_SPECS
 XORG_WITH_ASCIIDOC(8.4.5)
 
-AC_OUTPUT([Makefile
+AC_CONFIG_FILES([Makefile
            specs/Makefile
            inputproto.pc])
+AC_OUTPUT
